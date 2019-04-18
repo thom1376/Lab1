@@ -1,6 +1,7 @@
 package com.example.helloconstraint;
 
 import android.databinding.DataBindingUtil;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void countUp(View view) {
-        mCount++;
+        if (mCount++ == 0)
+            binding.buttonZero.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
         if (binding.showCount != null)
             binding.showCount.setText(Integer.toString(mCount));
         if (mCount % 2 == 0)
@@ -36,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setZero(View view) {
+        if (mCount != 0)
+            binding.buttonZero.setBackgroundColor(Color.LTGRAY);
+            binding.buttonCount.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
         mCount = 0;
         if (binding.showCount != null)
             binding.showCount.setText(Integer.toString(mCount));
