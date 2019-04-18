@@ -2,5 +2,13 @@
     <string name="app_name">Scrolling Text</string>
     <string name="article_title">Article Title</string>
     <string name="article_subtitle">Article Subtitle</string>
-    <string name="article_text">Article Text</string>
+    <string name="article_text">
+        In the app > res > values folder, open strings.xml.
+        Open any text file with a large amount of text, or open the strings.xml file of the finished ScrollingText app.
+        Enter the values for the strings article_title and article_subtitle with either a made-up title and subtitle, or use the values in the strings.xml file of the finished ScrollingText app. Make the string values single-line text without HTML tags or multiple lines.
+        Enter or copy and paste text for the article_text string.
+        You can use the text in your text file, or use the text provided for the article_text string in the strings.xml file of the finished ScrollingText app. The only requirement for this task is that the text must be long enough so that it doesn\'t fit on the screen. Keep in mind the following (refer to the figure below for an example): As you enter or paste text in the strings.xml file, the text lines don\'t wrap around to the next line—they extend beyond the right margin. This is the correct behavior—each new line of text starting at the left margin represents an entire paragraph. If you want the text in strings.xml to be wrapped, you can press Return to enter hard line endings, or format the text first in a text editor with hard line endings.
+        Enter \n to represent the end of a line, and another \n to represent a blank line. You need to add end-of-line characters to keep paragraphs from running into each other.
+        If you have an apostrophe (\') in your text, you must escape it by preceding it with a backslash (\'). If you have a double-quote in your text, you must also escape it (\"). You must also escape any other non-ASCII characters. See the Formatting and styling section of String resources for more details.
+    </string>
 </resources>
