@@ -1,12 +1,9 @@
 package com.example.helloconstraint;
 
 import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
-import android.renderscript.ScriptGroup;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.helloconstraint.databinding.ActivityMainBinding;
@@ -32,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         mCount++;
         if (binding.showCount != null)
             binding.showCount.setText(Integer.toString(mCount));
+        if (mCount % 2 == 0)
+            binding.buttonCount.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        else
+            binding.buttonCount.setBackgroundColor(getResources().getColor(R.color.colorAccent));
     }
 
     public void setZero(View view) {
