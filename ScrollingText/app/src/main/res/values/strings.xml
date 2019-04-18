@@ -11,4 +11,5 @@
         Enter \n to represent the end of a line, and another \n to represent a blank line. You need to add end-of-line characters to keep paragraphs from running into each other.
         If you have an apostrophe (\') in your text, you must escape it by preceding it with a backslash (\'). If you have a double-quote in your text, you must also escape it (\"). You must also escape any other non-ASCII characters. See the Formatting and styling section of String resources for more details.
     </string>
+    <string name="button_text">Add Comment</string>
 </resources>
